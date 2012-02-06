@@ -15,6 +15,9 @@
 		C5F9F4D214E0894000910186 /* CLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F9F4D114E0894000910186 /* CLAppDelegate.m */; };
 		C5F9F4D514E0894000910186 /* CLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F9F4D414E0894000910186 /* CLViewController.m */; };
 		C5F9F4D814E0894000910186 /* CLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F9F4D614E0894000910186 /* CLViewController.xib */; };
+		C5F9F4DF14E08A0800910186 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F9F4DE14E08A0800910186 /* CoreLocation.framework */; };
+		C5F9F4E114E08A2600910186 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F9F4E014E08A2600910186 /* CoreLocation.framework */; };
+		C5F9F4E414E08A7A00910186 /* CoreLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F9F4E314E08A7A00910186 /* CoreLocationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +25,19 @@
 		C5F9F4C114E0894000910186 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C5F9F4C314E0894000910186 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C5F9F4C514E0894000910186 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C5F9F4C914E0894000910186 /* CoreLocationTest-Info.plist */ = {isa = PBXFileReference; path = "CoreLocationTest-Info.plist"; sourceTree = "<group>"; };
+		C5F9F4C914E0894000910186 /* CoreLocationTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreLocationTest-Info.plist"; sourceTree = "<group>"; };
 		C5F9F4CB14E0894000910186 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C5F9F4CD14E0894000910186 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C5F9F4CF14E0894000910186 /* CoreLocationTest-Prefix.pch */ = {isa = PBXFileReference; path = "CoreLocationTest-Prefix.pch"; sourceTree = "<group>"; };
-		C5F9F4D014E0894000910186 /* CLAppDelegate.h */ = {isa = PBXFileReference; path = CLAppDelegate.h; sourceTree = "<group>"; };
+		C5F9F4CF14E0894000910186 /* CoreLocationTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreLocationTest-Prefix.pch"; sourceTree = "<group>"; };
+		C5F9F4D014E0894000910186 /* CLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLAppDelegate.h; sourceTree = "<group>"; };
 		C5F9F4D114E0894000910186 /* CLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLAppDelegate.m; sourceTree = "<group>"; };
-		C5F9F4D314E0894000910186 /* CLViewController.h */ = {isa = PBXFileReference; path = CLViewController.h; sourceTree = "<group>"; };
+		C5F9F4D314E0894000910186 /* CLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLViewController.h; sourceTree = "<group>"; };
 		C5F9F4D414E0894000910186 /* CLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLViewController.m; sourceTree = "<group>"; };
 		C5F9F4D714E0894000910186 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CLViewController.xib; sourceTree = "<group>"; };
+		C5F9F4DE14E08A0800910186 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C5F9F4E014E08A2600910186 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C5F9F4E214E08A7A00910186 /* CoreLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLocationController.h; sourceTree = "<group>"; };
+		C5F9F4E314E08A7A00910186 /* CoreLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLocationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,9 +45,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5F9F4DF14E08A0800910186 /* CoreLocation.framework in Frameworks */,
 				C5F9F4C214E0894000910186 /* UIKit.framework in Frameworks */,
 				C5F9F4C414E0894000910186 /* Foundation.framework in Frameworks */,
 				C5F9F4C614E0894000910186 /* CoreGraphics.framework in Frameworks */,
+				C5F9F4E114E08A2600910186 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 		C5F9F4B214E0894000910186 = {
 			isa = PBXGroup;
 			children = (
+				C5F9F4DE14E08A0800910186 /* CoreLocation.framework */,
 				C5F9F4C714E0894000910186 /* CoreLocationTest */,
 				C5F9F4C014E0894000910186 /* Frameworks */,
 				C5F9F4BE14E0894000910186 /* Products */,
@@ -67,6 +77,7 @@
 		C5F9F4C014E0894000910186 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C5F9F4E014E08A2600910186 /* CoreLocation.framework */,
 				C5F9F4C114E0894000910186 /* UIKit.framework */,
 				C5F9F4C314E0894000910186 /* Foundation.framework */,
 				C5F9F4C514E0894000910186 /* CoreGraphics.framework */,
@@ -83,6 +94,8 @@
 				C5F9F4D414E0894000910186 /* CLViewController.m */,
 				C5F9F4D614E0894000910186 /* CLViewController.xib */,
 				C5F9F4C814E0894000910186 /* Supporting Files */,
+				C5F9F4E214E08A7A00910186 /* CoreLocationController.h */,
+				C5F9F4E314E08A7A00910186 /* CoreLocationController.m */,
 			);
 			path = CoreLocationTest;
 			sourceTree = "<group>";
@@ -163,6 +176,7 @@
 				C5F9F4CE14E0894000910186 /* main.m in Sources */,
 				C5F9F4D214E0894000910186 /* CLAppDelegate.m in Sources */,
 				C5F9F4D514E0894000910186 /* CLViewController.m in Sources */,
+				C5F9F4E414E08A7A00910186 /* CoreLocationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

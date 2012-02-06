@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UIKit/UIKit.h>
 
-@interface CLViewController : UIViewController
+#import "CoreLocationController.h"
+
+@interface CLViewController : UIViewController <CoreLocationControllerDelegate> {
+	CoreLocationController *CLController;
+	IBOutlet UILabel *locLabel;
+}
+
+@property (nonatomic, retain) CoreLocationController *CLController;
 
 @end
+
